@@ -1,0 +1,19 @@
+{
+  "name": "davatar",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "lint": "eslint . --cache"
+  },
+  "devDependencies": {
+    "@kecrily/eslint-config": "^0.2.0",
+    "eslint": "^8.27.0",
+    "nuxt": "3.0.0-rc.13",
+    "typescript": "^4.8.4"
+  },
+  "eslintConfig": {
+    "extends": "@kecrily"
+  }
+}
