@@ -24,7 +24,7 @@ export default cachedEventHandler(async(event) => {
   for (const i in contributors) {
     const { html_url, login, avatar_url } = contributors[i]
     const avatar = Buffer.from(await $fetch(avatar_url, {
-      params: { s: 24 },
+      params: { s: 48 },
       responseType: 'arrayBuffer',
     })).toString('base64')
 
