@@ -47,9 +47,12 @@ export default cachedEventHandler(async(event) => {
       </a>`
   }
 
+  const height = contributors.length < 35 ? 26 : contributors.length / 35 * 26 + 2
+  const width = contributors.length < 35 ? contributors.length / 35 * 26 + 2 : 890
+
   event.res.setHeader('content-type', 'image/svg+xml; charset=utf-8')
   event.res.end(`
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="890" height="262">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${width}" height="${height}">
       ${body}
     </svg>
   `)
