@@ -36,8 +36,6 @@ export default cachedEventHandler(async(event) => {
 
     body += `
       <a
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
         xlink:href="${html_url}"
         target="_blank"
         rel="nofollow"
